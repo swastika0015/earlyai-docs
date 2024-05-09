@@ -1,10 +1,11 @@
 
 
 
+
 # Getting started
 
-## Step 1 - Sample project setup
-**Generating your first 20 unit tests using Early’s VSCode Extension**
+## Step 1 - Sample Project Setup
+**Generate your first 20 unit tests using Early’s VSCode Extension**
 
 This document will enable you to generate your first 20 unit tests in less than 5 minutes using Early's VSCode extension via a sample pre-configured TypeScript/Jest project.
 
@@ -35,19 +36,19 @@ Run Build
 <br>
 
 
-## Step 2 - Install the extension
-**Install Early AI VSCode Extension via MSFT market-Place**
+## Step 2 - Install the Extension
+**Install Early AI VSCode Extension via MSFT Marketplace**
 
-First, Search and install for the **Early AI** extension and log-in to your account
+Search and install the **EarlyAI** extension and log-in to your account
 * Search for the extension on VSCode market place and install it
-* Open the extension and log in using the welcome to our beta email information (ask to join our bete [here](https://www.startearly.ai/beta) if you don't have access)
+* Open the extension and log in using the welcome-to-our-beta email information (ask to join our beta [here](https://www.startearly.ai/beta) if you don't have access)
 <figure>
     <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c6ec6c27fae3ce11aec89_Market%20place.png"
          alt="build the project" width=400 >
 </figure>
 <br>
 
-## Step 3 - Run the project
+## Step 3 - Run the Project
 
 * Click on Early Extension icon on the left bar
 * Run the tests – verify they are green (if not go back to [Sample Project Setup](##Step-1---Sample-project-setup) )
@@ -61,7 +62,7 @@ First, Search and install for the **Early AI** extension and log-in to your acco
 
 
  
-## Step 4 - Using the extension
+## Step 4 - Using the Extension
 
 **Navigate through the extension views** 
 
@@ -91,27 +92,29 @@ First, Search and install for the **Early AI** extension and log-in to your acco
 
 
 
-## Step 5 - Generating your first tests
+## Step 5 - Generating your First Tests
 **Generating unit tests for methods/functions**
-*There are two ways to generate unit tests*
-<span>1. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7d2b6b8c8aabaa629b7f_Play.png" width=20 />  <span>   Play button via the code explorer, next to the public method/function name.  
+
+There are two ways to generate unit tests
+
+ <span>1. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7d2b6b8c8aabaa629b7f_Play.png" width=20 />  <span>   Play button via the code explorer, next to the public method/function name.  
  </span>
 
 <span>2. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663cb680268c302f4e39b758_GenerateTest1.png" width=100 />  <span>  "Generate tests" Code lens above each public method/function name on the code editor.  
  </span>
 
-Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take anyways from 20 to 60 seconds depending on the complexity of the code base and API response time.
+Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take between 20 to 60 seconds depending on the complexity of the code base and API response time.
 ![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c87d8cdcc01126dc9fcdb_GenerateTests.png)
 <br> 
 
 
 
-## Step 6 -  Generate and refreshing Coverage 
+## Step 6 -  Generate and Refresh Coverage 
 **Now you are ready to generate tests for this entire sample project**
 
 * Click on each public method
 * Refresh the coverage once the generation is completed
-* Review the test generated and their respective code coverage.
+* Review the tests generated and their respective code coverage.
 
 Currently we generate “Green” and “Red” unit tests.
 
