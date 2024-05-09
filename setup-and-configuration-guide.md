@@ -1,5 +1,6 @@
 
 
+
 ## 1. Setup and Configuration Guide
 
 
@@ -26,7 +27,8 @@ Installation
 Configure Jest in your project to integrate with the extension. Below is an example of a typical Jest configuration suitable for TypeScript projects:
 Filename is “jest.config.ts” and resides in the project's root folder.
 
-```import type { Config } from '@jest/types';
+```
+import type { Config } from '@jest/types';
 const config: Config.InitialOptions = {
   preset: 'ts-jest',
   testEnvironment: 'node',
@@ -68,7 +70,7 @@ If your project lacks any tests, begin by creating a basic test file or taking t
   });
 });
 ```
-
+ 
 ## 5. Using the Extension
 To effectively use the extension for generating unit tests, follow these simple steps:
 1.	Activate the Extension:
