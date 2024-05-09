@@ -5,7 +5,7 @@
 ## Step 1 - Sample project setup
 **Generating your first 20 unit tests using Early’s VSCode Extension**
 
-This document will enable you generating your first 20 unit tests in less then 5 min using early AI’s VSCode extension via a sample pre-configured typescript/jest project.
+This document will enable you to generating your first 20 unit tests in less than 5 minutes using Early's VSCode extension via a sample pre-configured TypeScript/Jest project.
 
 Sample Project setup
 * Clone early [sample-project](https://github.com/earlyai/sample-project) 
@@ -84,15 +84,17 @@ First, Search and install for the **Early AI** extension and log-in to your acco
 <br>
 
 
+
 ## Step 5 - Generating your first tests
 **Generating unit tests for methods**
 *There are two ways to generate unit tests*
 * [play button image here] Play button via the code explorer, next to the public method name.
 * [Generate test image here]  Code lens above each public method name on the code viewer
 
-Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take anyways from 20-60 seconds depends on the complexity of the code base and API response time.
+Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take anyways from 20 to 60 seconds depending on the complexity of the code base and API response time.
 ![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c87d8cdcc01126dc9fcdb_GenerateTests.png)
 <br> 
+
 
 
 ## Step 6 -  Generate and refreshing Coverage 
@@ -106,7 +108,7 @@ Currently we generate “Green” and “Red” unit tests.
 
 Green are healthy passing unit tests
 
-Red could be erroneous unit tests (bare with us until we improve the product) OR “good” tests that are revealing a bug.
+Red could be “good” tests that are revealing a bug or erroneous unit tests (bear with us until we improve the product).
 ![RefreshCoverage](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c87d85829aad6b012e157_RefreshCoverage.png)
 <br>
 
