@@ -1,6 +1,7 @@
 
 
 
+
 ## 1. Setup and Configuration Guide
 
 
@@ -52,19 +53,22 @@ Ensure your Jest configuration is properly set up to work with TypeScript and th
  
 ## 3. Preparing to Use the Extension
 Steps to Follow Before Generating Tests:
-1.	Activate the Extension:
+
+#### 1. Activate the Extension:
 * Open your TypeScript project in Visual Studio Code.
 * Switch to the extension's view.
-2.	Verify Test Setup:
+
+#### 2. Verify Test Setup:
 * Navigate to the test explorer in the extension's sidebar.
-* Ensure you can successfully run existing tests. If tests do not run properly, you may need to adjust your Jest configuration according to the errors displayed in the [troubleshooting section].
+* Ensure you can successfully run existing tests. If tests do not run properly, you may need to adjust your Jest configuration according to the errors displayed in the. [troubleshooting section].
 
 ## 4. Setting Up Initial Tests:
 If your project lacks any tests, begin by creating a basic test file or taking the ***src/sample.test.ts*** file from the [Sample project](https://www.startearly.ai/elements/getting-started)
 
 * Place the test file in a directory included in the collectCoverageFrom array specified in your Jest configuration to ensure it contributes to the coverage report.
 * Save the following content in a file named test/sample.early.test.ts within the test folder under your source directory:
-```describe('Early Technologies Sample Tests', () => {
+```
+describe('Early Technologies Sample Tests', () => {
   it('Sample Test: Should validate true condition', () => {
     expect(true).toBeTruthy();
   });
@@ -73,22 +77,22 @@ If your project lacks any tests, begin by creating a basic test file or taking t
  
 ## 5. Using the Extension
 To effectively use the extension for generating unit tests, follow these simple steps:
-1.	Activate the Extension:
+#### 1. Activate the Extension:
 * Open your TypeScript project in Visual Studio Code.
 * Switch to the extension's view.
-2.	Locate the Target Method:
+#### 2. Locate the Target Method:
 * Use the extension's sidebar to navigate the tree view and find the method or function you wish to test. Currently, unit tests can be generated only public methods/functions.
-3.	Initiate Test Generation:
+#### 3. Initiate Test Generation:
 * You can generate unit tests in two ways:
 a.	Click on the button next to the method name in the code explorer.
 b.	Click on the "Generate tests" code-lens displayed above the public method name.
-4.	Start the Test Generation Process:
+#### 4. Start the Test Generation Process:
 * Press the 'play' button adjacent to the function or method in the tree view. This initiates the test generation.
-5.	Monitor the Process:
+#### 5. Monitor the Process:
 * A popup window will appear at the bottom right of the IDE, indicating that the test generation is underway.
-6.	Allow Time for Generation:
+#### 6. Allow Time for Generation:
 * The extension may take up to 60 seconds to automatically generate the necessary unit tests.
-7.	Review the Generated Tests:
+#### 7. Review the Generated Tests:
 * Once the tests are generated, a new file containing the tests will be automatically added to your project.
  
 ## 6. Troubleshooting
