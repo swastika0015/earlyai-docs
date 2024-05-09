@@ -43,7 +43,8 @@ const config: Config.InitialOptions = {
 };
 export default config;
 ```
->Important Configuration Parameters:
+
+### Important Configuration Parameters:
 
 * testEnvironment: Specifies the environment in which the tests are executed.
 * collectCoverageFrom: Defines the files for which coverage information should be collected.
