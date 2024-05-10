@@ -1,13 +1,11 @@
 
 
 
-
-## 1. Setup and Configuration Guide
-
+# Setup and Configuration Guide
 
 This Visual Studio Code extension is designed to automatically generate unit tests for TypeScript projects using Jest. Below is a guide to help you install, configure, and utilize the extension effectively.
 
-**Prerequisites**
+## 1. Prerequisites
 Before installing the extension, ensure you have the following prerequisites installed:
 * NodeJS
 * Jest

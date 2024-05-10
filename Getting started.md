@@ -1,126 +1,119 @@
 
 
 
+# Setup and Configuration Guide
 
-# Getting started
-<br>
-## Step 1 - Sample Project Setup
-**Generate your first 20 unit tests using Early’s VSCode Extension**
+This Visual Studio Code extension is designed to automatically generate unit tests for TypeScript projects using Jest. Below is a guide to help you install, configure, and utilize the extension effectively.
 
-This document will enable you to generate your first 20 unit tests in less than 5 minutes using Early's VSCode extension via a sample pre-configured TypeScript/Jest project.
-
-Sample Project setup
-* Clone early [sample-project](https://github.com/earlyai/sample-project) 
-* Run the following command on the VSCode terminal:
+## 1. Prerequisites
+Before installing the extension, ensure you have the following prerequisites installed:
+* NodeJS
+* Jest
+* TypeScript
+* ts-jest
+You can install Jest and TypeScript typings via npm:
 ```
-npm install
+npm install --save-dev jest @types/jest ts-jest
 ```
-
-*	Run Build On the NPM SCRIPTS tab on VSCode Explorer
-<figure>
-    <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663be67189425152535939b4_npmscript.png"
-         alt="build the project" width=400 >
-</figure>
-
-* You should get the message 
-```webpack 5.90.1 compiled successfully in xxx ms```
-<figure>
-<img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663d95813c5bff2e1e655fb4_Marketplace1.png" alt="build the project" width=400 >
-</figure>
-
-> The sample project Setup is completed
-<br>
-
-
-## Step 2 - Install the Extension
-**Install Early AI VSCode Extension via MSFT Marketplace**
-
-Search and install the **EarlyAI** extension and log-in to your account
-* Search for the extension on VSCode market place and install it
-* Open the extension and log in using the welcome-to-our-beta email information (ask to join our beta [here](https://www.startearly.ai/beta) if you don't have access)
-<figure>
-    <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c6ec6c27fae3ce11aec89_Market%20place.png"
-         alt="build the project" width=400 >
-</figure>
-<br>
-
-## Step 3 - Run the Project
-
-* Click on Early Extension icon on the left bar
-* Run the tests – verify they are green (if not go back to [Sample Project Setup](#step1sampleprojectsetup) )
-* Click on the Coverage Refresh button
-* Reload Window (>Developer: Reload Window)
-<figure>
-    <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663cb10312e36b9357f338a2_RefreshCoverage.png"
-         alt="build the project" width=800 >
-</figure>
-<br>
-
-
+Supported Test Frameworks
+* Jest: This extension is currently optimized for generating unit tests with Jest.
+Installation
+* Install the extension from the Visual Studio Code Marketplace.
+* Ensure that your project is set up with NodeJS and Jest.
  
-## Step 4 - Using the Extension
+## 2. Configuration
 
-**Navigate through the extension views** 
+Configure Jest in your project to integrate with the extension. Below is an example of a typical Jest configuration suitable for TypeScript projects:
+Filename is “jest.config.ts” and resides in the project's root folder.
 
- <span>1. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7e0c461b99a8e3ccaea1_Code%20Explorer.png" width=100 />  <span>  A tree of all the testable methods 
- </span>
- * Shows all testable (public) methods and/or functions in the project 
+```
+import type { Config } from '@jest/types';
+const config: Config.InitialOptions = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  rootDir: 'src',
+  testRegex: '.*\\.test\\.ts$',
+  collectCoverageFrom: ['**/*.ts'],
+  coverageDirectory: '../Coverage',
+  moduleNameMapper: {
+    "^@src/(.*)$": "<rootDir>/$1"
+  }
+};
+export default config;
+```
+>Important Configuration Parameters:
 
+* testEnvironment: Specifies the environment in which the tests are executed.
+* collectCoverageFrom: Defines the files for which coverage information should be collected.
+* coverageDirectory: Specifies the directory where coverage reports will be stored. Usually in the root folder.
+* ModuleNameMapper: If you have path aliases in tsconfig.json, identify them under compilerOptions.paths. Then, add matching regex patterns to moduleNameMapper in your Jest config to mirror the aliases, using <rootDir> to map them to their corresponding directories, like this:
+Ensure your Jest configuration is properly set up to work with TypeScript and the paths align with your project structure.
+ 
+## 3. Preparing to Use the Extension
+Steps to Follow Before Generating Tests:
 
-<span>2. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663cb3694d4df63f692b4a2e_100percent.png" width=40 />  <span>   The percentage next to each method/function shows the code coverage of that method/function 
- </span>
+#### 1. Activate the Extension:
+* Open your TypeScript project in Visual Studio Code.
+* Switch to the extension's view.
 
+#### 2. Verify Test Setup:
+* Navigate to the test explorer in the extension's sidebar.
+* Ensure you can successfully run existing tests. If tests do not run properly, you may need to adjust your Jest configuration according to the errors displayed in the. [troubleshooting section].
 
-<span>3. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7d2b6b8c8aabaa629b7f_Play.png" width=20 />  <span>   "Play" (generate tests) button next to public method names  
- </span>
+## 4. Setting Up Initial Tests:
+If your project lacks any tests, begin by creating a basic test file or taking the ***src/sample.test.ts*** file from the [Sample project](https://www.startearly.ai/elements/getting-started)
 
-<span>4. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7d2b7b9cc7555a5145ff_Refresh-botton.png" width=20 />  <span>  "Refresh" coverage button – next to the project name. </span>
+* Place the test file in a directory included in the collectCoverageFrom array specified in your Jest configuration to ensure it contributes to the coverage report.
+* Save the following content in a file named test/sample.early.test.ts within the test folder under your source directory:
+```
+describe('Early Technologies Sample Tests', () => {
+  it('Sample Test: Should validate true condition', () => {
+    expect(true).toBeTruthy();
+  });
+});
+```
+ 
+## 5. Using the Extension
+To effectively use the extension for generating unit tests, follow these simple steps:
+#### 1. Activate the Extension:
+* Open your TypeScript project in Visual Studio Code.
+* Switch to the extension's view.
+#### 2. Locate the Target Method:
+* Use the extension's sidebar to navigate the tree view and find the method or function you wish to test. Currently, unit tests can be generated only public methods/functions.
+#### 3. Initiate Test Generation:
+* You can generate unit tests in two ways:
+a.	Click on the button next to the method name in the code explorer.
+b.	Click on the "Generate tests" code-lens displayed above the public method name.
+#### 4. Start the Test Generation Process:
+* Press the 'play' button adjacent to the function or method in the tree view. This initiates the test generation.
+#### 5. Monitor the Process:
+* A popup window will appear at the bottom right of the IDE, indicating that the test generation is underway.
+#### 6. Allow Time for Generation:
+* The extension may take up to 60 seconds to automatically generate the necessary unit tests.
+#### 7. Review the Generated Tests:
+* Once the tests are generated, a new file containing the tests will be automatically added to your project.
+ 
+## 6. Troubleshooting
+If you encounter any issues while using the extension, consider the following steps:
 
- <span>5. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7e0c6d75744c585e6dc1_Test%20Explorer.png" width=100 />  <span>  A tree of  all the existing unit tests in the project. 
- </span>
+* If the Tree is not populated, reload the window.
+* Verify Jest Configuration: Ensure that your Jest configuration matches your project setup, particularly ensuring that collectCoverage is set to true. The extension relies on Jest's coverage reports to function properly. If coverage is not being collected, the extension will not work as expected.
+* Check Dependencies: Make sure that all dependencies, including Jest and @types/jest, are correctly installed and up to date.
+* Check Extension Output: Monitor the "EarlyAI" output window within Visual Studio Code for feedback from the extension. This window displays specific error messages and diagnostics that can help identify any issues with the test generation process.
 
+If the problem persists after these checks, please consider reporting the issue on the GitHub repository with detailed information about your setup and the errors encountered.
 
-* Clicking the “play” button on the text explorer tree executes all tests below that level.
-* Note that there is one sample unit tests under ****src/sample.test.ts****. this is required for the initialization of the extension. 
-
-![extension](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c87d9cdcc01126dc9fcf7_Extension.png)
-<br>
-
-
-
-## Step 5 - Generating your First Tests
-**Generating unit tests for methods/functions**
-
-There are two ways to generate unit tests
-
- <span>1. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7d2b6b8c8aabaa629b7f_Play.png" width=20 />  <span>   Play button via the code explorer, next to the public method/function name.  
- </span>
-
-<span>2. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663cb680268c302f4e39b758_GenerateTest1.png" width=100 />  <span>  "Generate tests" Code lens above each public method/function name on the code editor.  
- </span>
-
-Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take between 20 to 60 seconds depending on the complexity of the code base and API response time.
-![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c87d8cdcc01126dc9fcdb_GenerateTests.png)
-<br> 
-
-
-
-## Step 6 -  Generate and Refresh Coverage 
-**Now you are ready to generate tests for this entire sample project**
-
-* Click on each public method
-* Refresh the coverage once the generation is completed
-* Review the tests generated and their respective code coverage.
-
-Currently we generate “Green” and “Red” unit tests.
-
-Green are healthy passing unit tests
-
-Red could be “good” tests that are revealing a bug or erroneous unit tests (bear with us until we improve the product).
-![RefreshCoverage](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c87d85829aad6b012e157_RefreshCoverage.png)
-<br>
-
-
-## What's Next:
-Follow the [setup and configuration document](https://www.startearly.ai/elements/setup-and-configuration-guide) to setup your own projects and start generating meaningful unit tests for your code.
-
+## 7. Reporting Issues
+If you encounter a bug or an issue, please report it via [GitHub Issues](https://github.com/earlyai/earlyai-vscode-release/issues):
+1.	Visit the [GitHub](https://github.com/earlyai/earlyai-vscode-release/issues) repository.
+2.	Navigate to the 'Issues' section.
+3.	Click on 'New Issue'.
+4.	Provide a descriptive title and a detailed description of the issue. Attach screenshots or error logs, if possible, to help us understand the problem better.
+5.	Submit the issue.
+## 8. Suggesting Enhancements
+**We are always looking for ways to make our extension more useful:**
+1.	Visit the [GitHub](https://github.com/earlyai/earlyai-vscode-release/issues) repository.
+2.	Go to the 'Issues' section and check if a similar enhancement has already been proposed.
+3.	If not, create a new issue by selecting the 'Feature request' template.
+4.	Describe your idea with as many details as possible, explaining how it would benefit users of the extension.
+5.	Submit the request.
