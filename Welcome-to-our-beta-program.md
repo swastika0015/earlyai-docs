@@ -1,15 +1,15 @@
 
 
 
-# Welcome to Early's Private Beta Program.
-
+# Welcome to Early's Private Beta Program
+<br>
   
 ## Ready to Start?
 
 
-Use our quick [getting started](https://www.startearly.ai/elements/getting-started) guide, to help you effortlessly create your first 20 unit tests with just 5 minutes of setup
+Use our quick getting started [guide](https://www.startearly.ai/elements/getting-started), to help you effortlessly create your first 20 unit tests with just 5 minutes of setup
 
-To create tests on your own project, refer to our [advanced setup](https://www.startearly.ai/elements/setup-and-configuration-guide) and configuration guide
+To create tests on your own project, refer to our advanced setup and configuration [guide](https://www.startearly.ai/elements/setup-and-configuration-guide) 
 
 
 ## What is Early?

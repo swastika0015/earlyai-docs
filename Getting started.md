@@ -3,7 +3,7 @@
 
 
 # Getting started
-
+<br>
 ## Step 1 - Sample Project Setup
 **Generate your first 20 unit tests using Early’s VSCode Extension**
 
@@ -16,10 +16,7 @@ Sample Project setup
 npm install
 ```
 
-*	On the NPM SCRIPTS tab on VSCode Explorer
-```
-Run Build
-```
+*	Run Build On the NPM SCRIPTS tab on VSCode Explorer
 <figure>
     <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663be67189425152535939b4_npmscript.png"
          alt="build the project" width=400 >
@@ -28,11 +25,10 @@ Run Build
 * You should get the message 
 ```webpack 5.90.1 compiled successfully in xxx ms```
 <figure>
-<img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663be67125f8f71f7cdb2aad_buildnest.png" alt="build the project" width=400 >
+<img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663d95813c5bff2e1e655fb4_Marketplace1.png" alt="build the project" width=400 >
 </figure>
 
 > The sample project Setup is completed
-
 <br>
 
 
@@ -51,7 +47,7 @@ Search and install the **EarlyAI** extension and log-in to your account
 ## Step 3 - Run the Project
 
 * Click on Early Extension icon on the left bar
-* Run the tests – verify they are green (if not go back to [Sample Project Setup](##Step-1---Sample-project-setup) )
+* Run the tests – verify they are green (if not go back to [Sample Project Setup](#step1sampleprojectsetup) )
 * Click on the Coverage Refresh button
 * Reload Window (>Developer: Reload Window)
 <figure>
