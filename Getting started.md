@@ -61,7 +61,7 @@ npm install
 * 3. Click on the Coverage Refresh button
 * 4. Reload Window (>Developer: Reload Window)
 <figure>
-    <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663cb10312e36b9357f338a2_RefreshCoverage.png"
+    <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663f5e1fc41f030d44eeb1c6_InitialSetup.png"
          alt="build the project" width=800 >
 </figure>
 <br>
@@ -88,10 +88,10 @@ npm install
  </span>
 
 
-* Clicking the “play” button on the text explorer tree executes all tests below that level.
-* Note that there is one sample unit tests under ****src/sample.test.ts****. this is required for the initialization of the extension. 
+* Clicking the “play” button on the test explorer tree executes all tests below that level
+* Note that there is one sample unit tests under ****src/sample.test.ts****. this is required for the initialization of the extension
 
-![extension](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c87d9cdcc01126dc9fcf7_Extension.png)
+![extension](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663f60f6b08e9371da80de5d_Extension.png)
 <br>
 
 
@@ -108,7 +108,7 @@ There are two ways to generate unit tests
  </span>
 
 Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take between 20 to 60 seconds depending on the complexity of the code base and API response time.
-![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c87d8cdcc01126dc9fcdb_GenerateTests.png)
+![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663f64fafd33ed96c6dce2dd_GeneratingTests.png)
 <br> 
 
 
@@ -122,11 +122,10 @@ Once you generate a test a VSCode notification bar will pop up on the bottom rig
 
 Currently we generate “Green” and “Red” unit tests.
 
-* Green are healthy passing unit tests
+* <span style="color: green;">Green</span> are healthy passing unit tests
+* <span style="color: red;">Red</span> Red could be **good** tests that are revealing a bug or erroneous unit tests (bear with us as we improve the product).
 
-* Red could be “good” tests that are revealing a bug or erroneous unit tests (bear with us as we improve the product).
-
-![RefreshCoverage](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c87d85829aad6b012e157_RefreshCoverage.png)
+![RefreshCoverage](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663f65be69fa8f2974a780c7_RefreshCoverage.png)
 <br>
 
 
