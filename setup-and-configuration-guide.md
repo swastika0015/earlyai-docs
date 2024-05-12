@@ -1,11 +1,14 @@
 
 
 
+
 # Setup and Configuration Guide
 
 This Visual Studio Code extension is designed to automatically generate unit tests for TypeScript projects using Jest. Below is a guide to help you install, configure, and utilize the extension effectively.
 
 ## 1. Prerequisites
+For an easy initial setup we recommend you go through our [getting started guide](https://www.startearly.ai/elements/getting-started) first.
+
 Before installing the extension, ensure you have the following prerequisites installed:
 * [VSCode](https://code.visualstudio.com/download) (Version 1.88 and later)
 * NodeJS
@@ -21,7 +24,7 @@ Supported Test Frameworks
 * Jest: This extension is currently optimized for generating unit tests with Jest.
 <br>
 Installation
-* Install the extension from the Visual Studio Code Marketplace
+* Search for **EarlyAI** on the Visual Studio Marketplace via the IDE or the [Web](https://marketplace.visualstudio.com/items?itemName=Early-ai.EarlyAI) and Install Early's extension 
 * Ensure that your project is set up with NodeJS and Jest
  
 ## 2. Configuration
@@ -123,5 +126,5 @@ If you encounter a bug or an issue, please report it via GitHub Issues:
 5.	Submit the request
 
 
-### Looking forward to hearing from you
-### The Early team.
+**Looking forward to hearing from you**
+**The Early team.**
