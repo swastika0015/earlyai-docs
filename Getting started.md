@@ -3,6 +3,7 @@
 
 
 
+
 # Getting started
 
 ## 1. Sample Project Setup
@@ -54,13 +55,19 @@ npm install
 
 * More information about the EarlyAI extension can be found on Microsoft [Marketplace](https://marketplace.visualstudio.com/items?itemName=Early-ai.EarlyAI)
 
+* We highly recommend that you also install the Jest extension, which  supports full [jest](https://jestjs.io/ "https://jestjs.io/") features in vscode environment to make testing more intuitive
+<figure>
+    <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663f5c0353275a78f26c72b6_ExtensionMarketplace.png"
+         alt="build the project" width=400 >
+</figure>
+<br>
+
 
 ## 3. Run the Project
 
 * 1. Click on Early Extension icon on the left bar
-* 2. Run the existing sample tests – verify they are green (if not go back to [Sample Project Setup](#1sampleprojectsetup) )
-* 3. Click on the Coverage Refresh button
-* 4. Reload Window (>Developer: Reload Window)
+* 2. Click on the Coverage Refresh button
+* 3. View the files and method tree on the project tree
 <figure>
     <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663f5e1fc41f030d44eeb1c6_InitialSetup.png"
          alt="build the project" width=800 >
@@ -73,8 +80,8 @@ npm install
 
 **Navigate through the extension views** 
 
- <span>1. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7e0c461b99a8e3ccaea1_Code%20Explorer.png" width=100 />  <span>  A tree of all the testable methods </span>
- * Shows all testable (public) methods and/or functions in the project 
+ <span>1. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66465b7af49fee551912cb33_sample-project.png" width=100 />  <span>  A tree of all the testable methods /functions in the project</span>
+
 
 <span>2. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663cb3694d4df63f692b4a2e_100percent.png" width=40 />  <span>   The percentage next to each method/function shows the code coverage of that method/function 
  </span>
@@ -83,50 +90,50 @@ npm install
 <span>3. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7d2b6b8c8aabaa629b7f_Play.png" width=20 />  <span>   "Play" (generate tests) button next to public method names  
  </span>
 
-<span>4. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7d2b7b9cc7555a5145ff_Refresh-botton.png" width=20 />  <span>  "Refresh" coverage button – next to the project name. </span>
-
- <span>5. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7e0c6d75744c585e6dc1_Test%20Explorer.png" width=100 />  <span>  A tree of  all the existing unit tests in the project. 
- </span>
+<span>4. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7d2b7b9cc7555a5145ff_Refresh-botton.png" width=20 />  <span>  "Refresh" coverage button. Coverage refreshes automatically 10 idle seconds after unit tests generation </span>
 
 
-* Clicking the “play” button on the test explorer tree executes all tests below that level
-* Note that there is one sample unit tests under ****src/sample.test.ts****. this is required for the initialization of the extension
-
-![extension](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663f60f6b08e9371da80de5d_Extension.png)
+![extension](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66465c4834af6f45766befdb_extension.png)
 <br>
 
 
+ <span>5. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66465deb8f63471d9904c1cf_jesticon.png" width=20 />  <span>  Jest extension 
+ </span>
+
+* View and run all existing unit tests. green are passing and red
 
 ## 5. Generating your First Tests
 **Generating unit tests for methods/functions**
 
 There are two ways to generate unit tests
 
- <span>1. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7d2b6b8c8aabaa629b7f_Play.png" width=20 />  <span>   Play button via the code explorer, next to the public method/function name.  
+ <span>1. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7d2b6b8c8aabaa629b7f_Play.png" width=20 />  <span>  Play button via the code explorer, next to the public method/function name.  
  </span>
 
-<span>2. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663cb680268c302f4e39b758_GenerateTest1.png" width=100 />  <span>  "Generate tests" Code lens above each public method/function name on the code editor.  
+<span>2. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66465f70b6e51dd6844e5af7_GetOption.png" width=70 />  <span>  "Generate tests" Code lens above each public method/function name on the code editor.  
  </span>
 
-Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take between 20 to 60 seconds depending on the complexity of the code base and API response time.
-![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663f64fafd33ed96c6dce2dd_GeneratingTests.png)
+Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take between 15 to 30 seconds depending on the complexity of the code base and API response time.
+![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66465ec4bdaa85e0371cb669_GenerateTests.png)
 <br> 
 
 
 
-## 6. Generate Tests and Refresh Coverage 
+## 6. Review the coverage and generated tests 
+
 **Now you are ready to generate tests for this entire sample project**
 
-* Click on each public method
-* Coverage will be refreshed automaticaly once the generation is completed
-* Review the tests generated and their respective code coverage.
+* After generating the tests the coverage would refreshed automatically
+* Review the coverage on Early Extension
 
 Currently we generate “Green” and “Red” unit tests.
 
 * <span style="color: green;">Green</span> are healthy passing unit tests
 * <span style="color: red;">Red</span> Red could be **good** tests that are revealing a bug or erroneous unit tests (bear with us as we improve the product).
 
-![RefreshCoverage](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663f65be69fa8f2974a780c7_RefreshCoverage.png)
+* you can review the generated tests on the Jest extension or on any tool you use to execute Jest unit tests
+
+![RefreshCoverage](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66466296d7cabe8685fac2f4_Jestscreen.png)
 <br>
 
 ## Known issues
