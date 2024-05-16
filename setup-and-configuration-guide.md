@@ -25,9 +25,10 @@ Supported Test Frameworks
 <br>
 Installation
 * Search for **EarlyAI** on the Visual Studio Marketplace via the IDE or the [Web](https://marketplace.visualstudio.com/items?itemName=Early-ai.EarlyAI) and Install Early's extension 
-* Ensure that your project is set up with NodeJS and Jest
- 
+* Ensure that your project is set up with NodeJS and Jest.
+
 ## 2. Configuration
+You are ready to go if you have Jest configured and the above prerequisites installed! If not, please continue reading below for further setup instructions.
 
 Configure Jest in your project to integrate with the extension. Below is an example of a typical Jest configuration suitable for TypeScript projects:
 Filename is “jest.config.ts” and resides in the project's root folder.
@@ -39,8 +40,6 @@ const config: Config.InitialOptions = {
   testEnvironment: 'node',
   rootDir: 'src',
   testRegex: '.*\\.test\\.ts$',
-  collectCoverageFrom: ['**/*.ts'],
-  coverageDirectory: '../Coverage',
   moduleNameMapper: {
     "^@src/(.*)$": "<rootDir>/$1"
   }
@@ -50,8 +49,6 @@ export default config;
 >Important Configuration Parameters:
 
 * testEnvironment: Specifies the environment in which the tests are executed
-* collectCoverageFrom: Defines the files for which coverage information should be collected
-* coverageDirectory: Specifies the directory where coverage reports will be stored. Usually in the root folder
 * ModuleNameMapper: If you have path aliases in tsconfig.json, identify them under compilerOptions.paths. Then, add matching regex patterns to moduleNameMapper in your Jest config to mirror the aliases, using <rootDir> to map them to their corresponding directories, like this:
 Ensure your Jest configuration is properly set up to work with TypeScript and the paths align with your project structure
  
