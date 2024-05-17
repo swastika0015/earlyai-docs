@@ -4,6 +4,7 @@
 
 
 
+
 # Getting started
 
 ## 1. Sample Project Setup
@@ -99,7 +100,9 @@ npm install
  <span>5. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66465deb8f63471d9904c1cf_jesticon.png" width=20 />  <span>  Jest extension 
  </span>
 
-* View and run all existing unit tests. green are passing and red
+* View and run all existing unit tests. 
+<br>
+
 
 ## 5. Generating your First Tests
 **Generating unit tests for methods/functions**
@@ -113,10 +116,16 @@ There are two ways to generate unit tests
  </span>
 
 Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take between 15 to 30 seconds depending on the complexity of the code base and API response time.
+
 ![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66465ec4bdaa85e0371cb669_GenerateTests.png)
 <br> 
 
+3. When test generation is completed a new *[classname].[methodname].early.test.ts*  file will be created next to the tested method filename.
 
+<figure>
+    <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/6646da8a6a4be92554cd3a5d_Testfilename.png" width=400 >
+</figure>
+<br>
 
 ## 6. Review the coverage and generated tests 
 
