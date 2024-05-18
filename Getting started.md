@@ -20,17 +20,10 @@ This document will enable you to generate your first 20 unit tests in less than 
 ```
 npm install
 ```
+* process should be completed sussessfule with 0 vulnerabilities found. 
 
-*	Run Build On the NPM SCRIPTS tab on VSCode Explorer:
 <figure>
-    <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663be67189425152535939b4_npmscript.png"
-         alt="build the project" width=400 >
-</figure>
-
-* You should get the message 
-```webpack 5.90.1 compiled successfully in xxx ms```
-<figure>
-<img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663be67125f8f71f7cdb2aad_buildnest.png" alt="build the project" width=400 >
+<img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66484d3d4d549b265a53dd26_Npminstall.png" width=400 >
 </figure>
 
 > The sample project Setup is completed
@@ -49,8 +42,7 @@ npm install
 
 * Open the extension and log in using the welcome-to-our-beta email information (ask to join our beta [here](https://www.startearly.ai/beta) if you don't have access)
 <figure>
-    <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663f5b7dd85cd43ed1487cb5_login.png"
-         alt="build the project" width=400 >
+    <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66484dc8cc7a297bdf208462_Signin.png" alt="signin" width=400 >
 </figure>
 <br>
 
