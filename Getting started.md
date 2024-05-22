@@ -109,10 +109,11 @@ There are two ways to generate unit tests
 
 Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take between 15 to 30 seconds depending on the complexity of the code base and API response time.
 
-![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66465ec4bdaa85e0371cb669_GenerateTests.png)
+![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/664df386903c2e8ef992cbf1_extension1.png)
 <br> 
 
 3. When test generation is completed a new *[classname].[methodname].early.test.ts*  file will be created next to the tested method filename.
+4. Click on the coverage percentage number to open the Early generated test file (if one exists).
 
 <figure>
     <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/6646da8a6a4be92554cd3a5d_Testfilename.png" width=400 >
