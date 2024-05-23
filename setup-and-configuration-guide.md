@@ -49,6 +49,10 @@ export default config;
 >Important Configuration Parameters:
 
 * testEnvironment: Specifies the environment in which the tests are executed
+* testRegex: make sure you have 'test" in the regex. for example if you currently have 'spec' you need to change it to something like 
+```
+testRegex:  ".*\\.(test)|(spec)\\.ts$"};
+```
 * ModuleNameMapper: If you have path aliases in tsconfig.json, identify them under compilerOptions.paths. Then, add matching regex patterns to moduleNameMapper in your Jest config to mirror the aliases, using <rootDir> to map them to their corresponding directories, like this:
 Ensure your Jest configuration is properly set up to work with TypeScript and the paths align with your project structure
  
