@@ -67,6 +67,9 @@ Steps to follow before generating tests:
 * Navigate to the test explorer in the extension's sidebar
 * Ensure you can successfully run existing tests. If tests do not run properly, you may need to adjust your Jest configuration according to the errors in the [troubleshooting section](#6troubleshooting)
 
+#### 3. update Git's ".ignore" file
+* add **.early.coverage** to your git **.ignore** file 
+
 ## 4. Setting Up Initial Tests:
 If your project lacks any tests, begin by creating a basic test file or taking the ***src/sample.test.ts*** file from the [Sample project](https://www.startearly.ai/elements/getting-started)
 

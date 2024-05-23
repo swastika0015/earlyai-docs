@@ -5,6 +5,7 @@
 
 
 
+
 # Getting started
 
 ## 1. Sample Project Setup
@@ -66,7 +67,9 @@ npm install
 </figure>
 <br>
 
-
+* Update Git's ".ignore" file add: 
+```.early.coverage```
+to your git **.ignore** file 
  
 ## 4. Using the Extension
 
