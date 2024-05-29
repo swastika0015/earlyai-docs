@@ -6,6 +6,7 @@
 
 
 
+
 # Getting started
 
 ## 1. Sample Project Setup
@@ -88,7 +89,7 @@ to your git **.ignore** file
 <span>4. </span> <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/663c7d2b7b9cc7555a5145ff_Refresh-botton.png" width=20 />  <span>  "Refresh" coverage button. Coverage refreshes automatically 10 idle seconds after unit tests generation </span>
 
 
-![extension](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66465c4834af6f45766befdb_extension.png)
+![extension](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/6656afcf7519346bfe1ef7af_ExtensionV4.png)
 <br>
 
 
@@ -112,7 +113,7 @@ There are two ways to generate unit tests
 
 Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take between 15 to 30 seconds depending on the complexity of the code base and API response time.
 
-![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/664df386903c2e8ef992cbf1_extension1.png)
+![GeneratingTests](https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/6656afec11d838d500edddfe_GenerateTestsV4.png)
 <br> 
 
 3. When test generation is completed a new *[classname].[methodname].early.test.ts*  file will be created next to the tested method filename.
