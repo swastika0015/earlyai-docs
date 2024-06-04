@@ -42,7 +42,8 @@ const config: Config.InitialOptions = {
   testRegex: '.*\\.test\\.ts$',
   moduleNameMapper: {
     "^@src/(.*)$": "<rootDir>/$1"
-  }
+  },
+  collectCoverageFrom: ["./**/*.(t|j)s"]
 };
 export default config;
 ```
