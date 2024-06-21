@@ -44,9 +44,9 @@ npm install
 
 ## 3. Browse the extension
 
-* 1. Click on Early's Extension icon on the left bar
-* 2. Make sure your project has node_modules, jest.config, and jest setup correctly
-* 3. View the files and method tree on the project tree
+* Click on Early's Extension icon on the left bar
+* Make sure your project has node_modules, jest.config, and jest setup correctly
+* View the files and method tree on the project tree
 <figure>
     <img src="https://raw.githubusercontent.com/babybeluga1980/documentation/main/media/extension-setup.png"
          alt="build the project" width=400 >
@@ -73,7 +73,7 @@ npm install
 <span>5. </span> <img src="https://raw.githubusercontent.com/babybeluga1980/documentation/main/media/Icon-codelens.png" width=200 />  <span>  code lens above public method/function names </span>
 
 <span>6. </span> <img src="https://raw.githubusercontent.com/babybeluga1980/documentation/main/media/icon-refresh.png" width=20 />  <span>  "Refresh" coverage button. note: Coverage refreshes automatically after test generations</span>
-
+<br>
 
 ![extension](https://raw.githubusercontent.com/babybeluga1980/documentation/main/media/extension-overview.png)
 <br>
@@ -94,6 +94,7 @@ There are three ways to generate unit tests
 <span>3. </span> <img src="https://raw.githubusercontent.com/babybeluga1980/documentation/main/media/icon-contextmenu-gentests.png" width=140 />  <span>  Context menu: right click within a method name or scope  
  </span>
 Once you generate a test a VSCode notification bar will pop up on the bottom right corner until the generation is completed. Test generation can take between 15 to 30 seconds depending on the complexity of the code base and API response time.
+<br>
 
 ![GeneratingTests](https://raw.githubusercontent.com/babybeluga1980/documentation/main/media/screen-generatingtests.png)
 <br> 
@@ -120,6 +121,7 @@ You can go-to the generated tests and view them in 3 ways.
 
 <span>3. </span> <img src="https://raw.githubusercontent.com/babybeluga1980/documentation/main/media/icon-contextmenu-gototests.png" width=140 />  <span>  context menu: right click within a method name or scope  
  </span>
+<br>
 
 ![ViewTests](https://raw.githubusercontent.com/babybeluga1980/documentation/main/media/Screen-viewtests.png)
 <br>
