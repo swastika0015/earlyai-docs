@@ -61,30 +61,17 @@ Ensure your Jest configuration is properly set up to work with TypeScript and th
 Steps to follow before generating tests:
 
 #### 1. Activate the Extension:
-* Open your TypeScript project in Visual Studio Code
-* Switch to the extension's view
+* Open your TypeScript project in Visual Studio Code.
+* Switch to the extension's view and complete the signup process.
 
 #### 2. Verify Test Setup:
-* Navigate to the test explorer in the extension's sidebar
-* Ensure you can successfully run existing tests. If tests do not run properly, you may need to adjust your Jest configuration according to the errors in the [troubleshooting section](#6troubleshooting)
+* Ensure you can successfully run existing tests. If tests do not run properly, you may need to adjust your Jest configuration according to the errors in the [troubleshooting section](#6troubleshooting).
+* Navigate to the test explorer in the extension's sidebar and refresh the extension using the “Refresh Coverage” icon.
 
 #### 3. update Git's ".ignore" file
 * add **.early.coverage** to your git **.ignore** file 
-
-## 4. Setting Up Initial Tests:
-If your project lacks any tests, begin by creating a basic test file or taking the ***src/sample.test.ts*** file from the [Sample project](https://www.startearly.ai/elements/getting-started)
-
-* Place the test file in a directory included in the collectCoverageFrom array specified in your Jest configuration to ensure it contributes to the coverage report
-* Save the following content in a file named test/sample.early.test.ts within the test folder under your source directory:
-```
-describe('Early Technologies Sample Tests', () => {
-  it('Sample Test: Should validate true condition', () => {
-    expect(true).toBeTruthy();
-  });
-});
-```
  
-## 5. Using the Extension
+## 6. Using the Extension
 To effectively use the extension for generating unit tests, follow these simple steps:
 #### 1. Activate the Extension:
 * Open your TypeScript project in Visual Studio Code
@@ -105,7 +92,7 @@ b.	Click on the "Generate tests" code-lens displayed above the public method nam
 #### 7. Review the Generated Tests:
 * Once the tests are generated, a new file containing the tests will be automatically added to your project
  
-## 6. Troubleshooting
+## 7. Troubleshooting
 If you encounter any issues while using the extension, consider the following steps:
 
 * If the Tree is not populated, reload the window
@@ -115,14 +102,14 @@ If you encounter any issues while using the extension, consider the following st
 
 If the problem persists after these checks, please consider reporting the issue on the GitHub repository with detailed information about your setup and the errors encountered.
 
-## 7. Reporting Issues
+## 8. Reporting Issues
 If you encounter a bug or an issue, please report it via GitHub Issues:
 1.	Visit the [GitHub](https://github.com/earlyai/earlyai-vscode-release/issues) repository
 2.	Navigate to the 'Issues' section
 3.	Click on 'New Issue'
 4.	Provide a descriptive title and a detailed description of the issue. Attach screenshots or error logs, if possible, to help us understand the problem better
 5.	Submit the issue
-## 8. Suggesting Enhancements
+## 9. Suggesting Enhancements
 **We are always looking for ways to make our product more powerful:**
 1.	Visit the [GitHub](https://github.com/earlyai/earlyai-vscode-release/issues) repository
 2.	Go to the 'Issues' section and check if a similar enhancement has already been proposed
