@@ -71,7 +71,7 @@ Steps to follow before generating tests:
 #### 3. update Git's ".ignore" file
 * add **.early.coverage** to your git **.ignore** file 
  
-## 6. Using the Extension
+## 4. Using the Extension
 To effectively use the extension for generating unit tests, follow these simple steps:
 #### 1. Activate the Extension:
 * Open your TypeScript project in Visual Studio Code
@@ -92,7 +92,7 @@ b.	Click on the "Generate tests" code-lens displayed above the public method nam
 #### 7. Review the Generated Tests:
 * Once the tests are generated, a new file containing the tests will be automatically added to your project
  
-## 7. Troubleshooting
+## 5. Troubleshooting
 If you encounter any issues while using the extension, consider the following steps:
 
 * If the Tree is not populated, reload the window
@@ -102,14 +102,14 @@ If you encounter any issues while using the extension, consider the following st
 
 If the problem persists after these checks, please consider reporting the issue on the GitHub repository with detailed information about your setup and the errors encountered.
 
-## 8. Reporting Issues
+## 6. Reporting Issues
 If you encounter a bug or an issue, please report it via GitHub Issues:
 1.	Visit the [GitHub](https://github.com/earlyai/earlyai-vscode-release/issues) repository
 2.	Navigate to the 'Issues' section
 3.	Click on 'New Issue'
 4.	Provide a descriptive title and a detailed description of the issue. Attach screenshots or error logs, if possible, to help us understand the problem better
 5.	Submit the issue
-## 9. Suggesting Enhancements
+## 7. Suggesting Enhancements
 **We are always looking for ways to make our product more powerful:**
 1.	Visit the [GitHub](https://github.com/earlyai/earlyai-vscode-release/issues) repository
 2.	Go to the 'Issues' section and check if a similar enhancement has already been proposed
