@@ -7,7 +7,7 @@
 This Visual Studio Code extension is designed to automatically generate unit tests for TypeScript projects using Jest. Below is a guide to help you install, configure, and utilize the extension effectively.
 
 ## 1. Prerequisites
-For an easy initial setup we recommend you go through our [getting started guide](https://www.startearly.ai/elements/getting-started) first.
+For an easy initial setup we recommend you go through our [getting started guide](https://www.startearly.ai/docs/getting-started) first.
 
 Before installing the extension, ensure you have the following prerequisites installed:
 * [VSCode](https://code.visualstudio.com/download) (Version 1.88 and later)
