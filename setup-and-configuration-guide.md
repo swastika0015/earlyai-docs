@@ -4,24 +4,34 @@
 
 # Setup and Configuration Guide
 
-This Visual Studio Code extension is designed to automatically generate unit tests for TypeScript projects using Jest. Below is a guide to help you install, configure, and utilize the extension effectively.
+This Visual Studio Code extension is designed to automatically generate unit tests for JavaScript and TypeScript projects using Jest. 
+Below is a guide to help you install, configure, and utilize the extension effectively.
 
 ## 1. Prerequisites
-For an easy initial setup we recommend you go through our [getting started guide](https://www.startearly.ai/docs/getting-started) first.
+For an easy initial setup, we recommend you first go through our [getting started guide](https://www.startearly.ai/docs/getting-started).
+The extension supports [VSCode](https://code.visualstudio.com/download) (Version 1.88 and later).
 
 Before installing the extension, ensure you have the following prerequisites installed:
+=======
 * [VSCode](https://code.visualstudio.com/download) (Version 1.88 and later)
 * NodeJS
 * Jest (if Jest does not exists or not configured correctly you can still generate tests but we won't be able to validate them)
 * TypeScript or JavaScript
 * ts-jest
 
-You can install Jest and TypeScript typings via npm:
+JavaScript
 ```
-npm install --save-dev jest @types/jest ts-jest
+npm install jest babel-jest @babel/core @babel/preset-env --save-dev
 ```
+
+TypeScript
+```
+npm install jest @types/jest ts-jest ts-node --save-dev
+```
+
+
 Supported Test Frameworks
-* Jest: This extension is currently optimized for generating unit tests with Jest.
+* Jest: This extension is currently, optimized for generating unit tests with Jest.
 <br>
 Installation
 * Search for **EarlyAI** on the Visual Studio Marketplace via the IDE or the [Web](https://marketplace.visualstudio.com/items?itemName=Early-ai.EarlyAI) and Install Early's extension 
@@ -31,26 +41,42 @@ Installation
 You are ready to go if you have Jest configured and the above prerequisites installed! If not, please continue reading below for further setup instructions.
 
 Configure Jest in your project to integrate with the extension. Below is an example of a typical Jest configuration suitable for TypeScript projects:
-Filename is “jest.config.ts” and resides in the project's root folder.
 
+Typical TypeScript jest configuration. Please adjust to your settings!
 ```
-import type { Config } from '@jest/types';
-const config: Config.InitialOptions = {
+{
   preset: 'ts-jest',
   testEnvironment: 'node',
-  rootDir: 'src',
-  testRegex: '.*\\.test\\.ts$',
-  moduleNameMapper: {
-    "^@src/(.*)$": "<rootDir>/$1"
-  },
-  collectCoverageFrom: ["./**/*.(t|j)s"]
-};
-export default config;
+  testMatch: ['**/?(*.)+(spec|test).ts?(x)'],
+  collectCoverageFrom: [
+    'src/**/*.{ts,tsx}',   // Include source files
+    '!src/**/*.d.ts',  
+  ],
+  coveragePathIgnorePatterns: [
+    '/node_modules/', // Exclude node modules
+  ],
+  coverageReporters: ['text', 'lcov'],
+}
 ```
->Important Configuration Parameters:
 
-* testEnvironment: Specifies the environment in which the tests are executed
-* testRegex: make sure you have 'test" in the regex. for example if you currently have 'spec' you need to change it to something like 
+Typical JavaScript jest configuration. Please adjust to your settings!
+```
+{
+  testEnvironment: 'node',
+  presets: ['@babel/preset-env'],
+  collectCoverageFrom: [
+    'src/**/*.{js}',  // Include source files
+  ],
+  testMatch: ['**/?(*.)+(spec|test).js?(x)'],
+  coveragePathIgnorePatterns: [
+    '/node_modules/', // Exclude node modules
+  ],
+  coverageReporters: ['text', 'lcov'],
+}
+```
+
+>Important Configuration Parameters:
+* testRegex: make sure you have 'test" in the regex. for example, if you currently have 'spec' you need to change it to something like 
 ```
 testRegex:  ".*\\.(test)|(spec)\\.ts$"};
 ```
