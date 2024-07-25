@@ -65,7 +65,7 @@ Steps to follow before generating tests:
 * Switch to the extension's view and complete the signup process.
 
 #### 2. Verify Test Setup:
-* Ensure you can successfully run existing tests. If tests do not run properly, you may need to adjust your Jest configuration according to the errors in the [troubleshooting section](#5.-Troubleshooting).
+* Ensure you can successfully run existing tests. If tests do not run properly, you may need to adjust your Jest configuration according to the errors in the [troubleshooting section](#5troubleshooting).
 * Navigate to the test explorer in the extension's sidebar and refresh the extension using the “Refresh Coverage” icon.
 
 #### 3. update Git's ".ignore" file
