@@ -50,7 +50,7 @@ Typical TypeScript jest configuration. Please adjust to your settings!
   testMatch: ['**/?(*.)+(spec|test).ts?(x)'],
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}',   // Include source files
-    '!src/**/*.d.ts',  
+    '!src/**/*.d.ts',   // Exclude declaration files
   ],
   coveragePathIgnorePatterns: [
     '/node_modules/', // Exclude node modules
@@ -63,15 +63,21 @@ Typical JavaScript jest configuration. Please adjust to your settings!
 ```
 {
   testEnvironment: 'node',
-  presets: ['@babel/preset-env'],
-  collectCoverageFrom: [
-    'src/**/*.{js}',  // Include source files
-  ],
   testMatch: ['**/?(*.)+(spec|test).js?(x)'],
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx}',  // Include source files
+  ],
   coveragePathIgnorePatterns: [
     '/node_modules/', // Exclude node modules
   ],
   coverageReporters: ['text', 'lcov'],
+}
+```
+
+Make sure your Babel configuration includes the following settings for JavaScript (ES6+):
+```
+{
+  presets: ['@babel/preset-env'],
 }
 ```
 
