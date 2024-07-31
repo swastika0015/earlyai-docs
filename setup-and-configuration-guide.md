@@ -12,11 +12,11 @@ For an easy initial setup, we recommend you first go through our [getting starte
 The extension supports [VSCode](https://code.visualstudio.com/download) (Version 1.88 and later).
 
 Before installing the extension, ensure you have the following prerequisites installed:
-=======
+
 * [VSCode](https://code.visualstudio.com/download) (Version 1.88 and later)
 * NodeJS
 * Jest (if Jest does not exists or not configured correctly you can still generate tests but we won't be able to validate them)
-* TypeScript or JavaScript
+* JavaScript orTypeScript
 * ts-jest
 
 JavaScript
