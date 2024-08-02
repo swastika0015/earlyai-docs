@@ -33,6 +33,16 @@ Before installing the extension, ensure you have the following prerequisites ins
 ```bash
 npm install jest babel-jest @babel/core @babel/preset-env --save-dev
 ```
+Typical JavaScript Jest Configuration
+```JSON
+{
+  "testEnvironment": "node",
+  "testMatch": ["**/?(*.)+(spec|test).js?(x)"],
+  "collectCoverageFrom": ["src/**/*.{js,jsx}"],
+  "coveragePathIgnorePatterns": ["/node_modules/"],
+  "coverageReporters": ["text", "lcov"]
+}
+```
 #### TypeScript
 ```bash
 npm install jest @types/jest ts-jest ts-node --save-dev
@@ -48,32 +58,11 @@ Typical TypeScript Jest Configuration
   "coverageReporters": ["text", "lcov"]
 }
 ```
-Typical JavaScript Jest Configuration
-```JSON
-{
-  "testEnvironment": "node",
-  "testMatch": ["**/?(*.)+(spec|test).js?(x)"],
-  "collectCoverageFrom": ["src/**/*.{js,jsx}"],
-  "coveragePathIgnorePatterns": ["/node_modules/"],
-  "coverageReporters": ["text", "lcov"]
-}
-```
-Mocha
-JavaScript
+
+### Mocha
+####JavaScript
 ```bash
 npm install mocha chai sinon --save-dev
-```
-TypeScript
-```bash
-npm install mocha @types/mocha chai @types/chai sinon @types/sinon ts-node --save-dev
-```
-
-Typical TypeScript Mocha Configuration
-```json
-{
-  "require": "ts-node/register",
-  "spec": "src/**/*.spec.ts"
-}
 ```
 Typical JavaScript Mocha Configuration
 ```json
@@ -81,17 +70,24 @@ Typical JavaScript Mocha Configuration
   "spec": "src/**/*.spec.js"
 }
 ```
-Important Configuration Parameters
-
-	•	testRegex: Ensure you have ‘test’ in the regex. For example:
-```json
-"testRegex": ".*\\.(test|spec)\\.ts$"
+#### TypeScript
+```bash
+npm install mocha @types/mocha chai @types/chai sinon @types/sinon ts-node --save-dev
 ```
-	•	ModuleNameMapper: If you have path aliases in tsconfig.json, add matching regex patterns to moduleNameMapper in your Jest config to mirror the aliases, using <rootDir> to map them to their corresponding directories.
+Typical TypeScript Mocha Configuration
+```json
+{
+  "require": "ts-node/register",
+  "spec": "src/**/*.spec.ts"
+}
+```
 
-4. Preparing to Use the Extension
+#### Important Configuration Parameters
+* ModuleNameMapper: If you have path aliases in tsconfig.json, add matching regex patterns to moduleNameMapper in your Jest config to mirror the aliases, using <rootDir> to map them to their corresponding directories.
 
-Steps to Follow Before Generating Tests
+## 4. Preparing to Use the Extension
+
+### Steps to Follow Before Generating Tests
 
 	1.	Activate the Extension:
 	•	Open your TypeScript or JavaScript project in Visual Studio Code.
