@@ -15,7 +15,8 @@ This Visual Studio Code extension is designed to automatically generate unit tes
 8. [Suggesting Enhancements](#8-suggesting-enhancements)
 
 ## 1. Prerequisites
-For an easy initial setup, we recommend you go through our [getting started guide](https://www.startearly.ai/docs/getting-started). The extension supports [VSCode](https://code.visualstudio.com/download) (Version 1.88 or higher), [VSCode Insider](https://code.visualstudio.com/insiders/), and [VSCodedium](https://vscodium.com/).
+For an easy initial setup, we recommend you go through our [getting started guide](https://www.startearly.ai/docs/getting-started). 
+The extension supports [VSCode](https://code.visualstudio.com/download) (Version 1.88 or higher), [VSCode Insider](https://code.visualstudio.com/insiders/), and [VSCodedium](https://vscodium.com/).
 
 Before installing the extension, ensure you have the following prerequisites installed:
 - NodeJS
