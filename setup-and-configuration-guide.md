@@ -2,18 +2,6 @@
 
 This Visual Studio Code extension is designed to automatically generate unit tests for JavaScript and TypeScript projects using Jest, Mocha, Sinon, and Chai. Below is a guide to help you install, configure, and utilize the extension effectively.
 
-## Index
-1. [Prerequisites](#1-prerequisites)
-2. [Installation](#2-installation)
-3. [Configuration](#3-configuration)
-    - [Jest](#jest)
-    - [Mocha](#mocha)
-4. [Preparing to Use the Extension](#4-preparing-to-use-the-extension)
-5. [Using the Extension](#5-using-the-extension)
-6. [Troubleshooting](#6-troubleshooting)
-7. [Reporting Issues](#7-reporting-issues)
-8. [Suggesting Enhancements](#8-suggesting-enhancements)
-
 ## 1. Prerequisites
 For an easy initial setup, we recommend you first go through our [getting started guide](https://www.startearly.ai/docs/getting-started). The extension supports [VSCode](https://code.visualstudio.com/download) (Version 1.88 and later).
 
