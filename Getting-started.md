@@ -4,12 +4,12 @@
 
 **Generate your first 30 unit tests using Early’s VSCode Extension**
 
-This document will enable you to generate your first 30 unit tests in less than a minute using Early's VSCode extension via a sample earlyai-todo-app pre-configured TypeScript/Jest project.
+This guide will enable you to generate your first 30 unit tests in less than a minute using Early's VSCode extension via a sample earlyai-todo-app pre-configured TypeScript/Jest project.
 
 **earlyai-todo-app project setup:**
 * Make sure you have [VSCode](https://code.visualstudio.com/download) Version 1.88 or later installed
 * Clone Early's [earlyai-todo-app](https://github.com/earlyai/earlyai-todo-app) 
-* Run the following command on the VSCode terminal:
+* Run the following command on the VSCode terminal to install the dependencies:
 ```
 npm install
 ```
@@ -22,14 +22,14 @@ npm install
 
 * Search for the **EarlyAI** extension on VSCode marketplace and install it
 <figure>
-    <img src="https://raw.githubusercontent.com/earlyai/earlyai-docs/main/media/extension-marketplace.png"
-         alt="marketplace" width=400 >
+    <img src="./media/extension-marketplace.png"
+         alt="marketplace" width=100% >
 </figure>
 <br>
 
 * Open the extension and log in using your email address for verification
 <figure>
-    <img src="https://raw.githubusercontent.com/earlyai/earlyai-docs/main/media/Signin.png" alt="signin" width=400 >
+    <img src="./media/signin.png" alt="signin" width=100% >
 </figure>
 <br>
 
@@ -37,7 +37,7 @@ npm install
 
 * We highly recommend that you also install the Jest extension, which  supports full [jest](https://jestjs.io/ "https://jestjs.io/") features in vscode environment to make testing more intuitive
 <figure>
-    <img src="https://uploads-ssl.webflow.com/6583e7ad2ff3f8a81492938e/66466550cfe7ddcd60a65d88_Jest-extension.png" width=400 >
+    <img src="./media/jest-extension.png" width=100% >
 </figure>
 <br>
 
